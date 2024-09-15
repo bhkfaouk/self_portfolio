@@ -1,0 +1,58 @@
+/* index.css */
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0.5rem 1rem; /* Adjust for vertical spacing */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem; /* Tailwind's text-lg */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #d1d5db; /* Tailwind's gray-400 */
+}
+/* index.css */
+
+/* Light Mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar-light-mode {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1a202c;
+    color: #ffffff;
+}
+
+.navbar-dark-mode {
+    background-color: #2d3748;
+    color: #ffffff;
+}
+
+/* Transition */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
