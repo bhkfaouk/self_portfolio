@@ -1,5 +1,5 @@
 import React from "react";
-import ThemeToggle from "./ThemeToggle.tsx";
+import ThemeToggle from "./ThemeToggle";
 
 const Projects: React.FC = () => {
     return (

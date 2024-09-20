@@ -1,10 +1,10 @@
 import React from "react";
 
-import About from "./About.tsx";
-import Experience from "./Experience.tsx";
-import Education from "./Education.tsx";
-import Projects from "./Projects.tsx";
-import ThemeToggle from "./ThemeToggle.tsx";
+import About from "./About";
+import Experience from "./Experience";
+import Education from "./Education";
+import Projects from "./Projects";
+import ThemeToggle from "./ThemeToggle";
 
 interface HeroProps {
     activeSection: string;

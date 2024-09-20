@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faGraduationCap, faHome , faProjectDiagram ,faUser ,faBriefcase} from '@fortawesome/free-solid-svg-icons';
-import ThemeToggle   from "./ThemeToggle.tsx";
+import ThemeToggle   from "./ThemeToggle";
 
 
 
