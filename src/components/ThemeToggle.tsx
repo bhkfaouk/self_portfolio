@@ -1,33 +1,30 @@
-// src/components/ThemeToggle.tsx
-import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { useState } from "react";
 
+// icons
+import { BsMoon, BsSun } from "react-icons/bs";
 const ThemeToggle: React.FC = () => {
-    const [theme, setTheme] = useState<'light' | 'dark'>(
-        localStorage.getItem('theme') as 'light' | 'dark' || 'light'
-    );
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-    useEffect(() => {
-        document.body.className = theme === 'dark' ? 'dark-mode' : 'light-mode';
-        localStorage.setItem('theme', theme);
-    }, [theme]);
+  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
 
-    const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
-    };
+  /* if (resolvedTheme === "dark") {
+      console.log("dark");
+      return setTheme("light");
+    }
+    if (resolvedTheme === "light") {
+      console.log("light");
+      return setTheme("dark");
+    } */
 
-    return (
-        <button
-            onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-gray-700"
-        >
-            <FontAwesomeIcon
-                icon={theme === 'dark' ? faSun : faMoon}
-                className="w-6 h-6"
-            />
-        </button>
-    );
+  return (
+    <button
+      className="fixed bottom-5 right-5  w-[2.5rem] h-[2.5rem] bg-opacity-80 backdrop:blur-[] rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-150 transition-all
+        bg-gray-950 dark:bg-white dark:text-black text-white"
+      onClick={toggleDarkMode}
+    >
+      {isDarkMode ? <BsMoon size={20} /> : <BsSun size={20} />}
+    </button>
+  );
 };
 
 export default ThemeToggle;

@@ -5,7 +5,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Include TypeScript files
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: {
+          primary: "#0F172A",
+          secondary: "#eceff3",
+        },
+      },
+    },
   },
-  plugins: [],
-}
+  darkMode: "class",
+};
