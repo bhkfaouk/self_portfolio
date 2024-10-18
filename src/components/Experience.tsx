@@ -1,70 +1,50 @@
 import React from "react";
+import { Button, Timeline } from "flowbite-react";
+import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="p-10  h-auto ">
-      <div className=" pl-10 ">
-        <h2 className="text-3xl font-bold mb-4">Experience</h2>
-        <section className="timeline-area  mb-20 border-l border-l-solid border-l-[#1e293b] dark:border-white pl-4 ">
-          <div
-            className="flex flex-col rounded-2xl w-96 bg-[#ffffff] shadow-xl mb-3"
-            style={{ position: "relative" }}
-          >
-            <span className="absolute dark:bg-white top-[70px] left-[-23px] w-[15px] h-[15px] rounded-full bg-[#0F172A] border-2 border-[#1e293b]" />
-            <div className="flex  flex-col p-8 bg-[#1e293b]  rounded-lg dark:text-white text-white  ">
-              <div className="text-2xl font-bold  pb-6 ">
-                SOFTWARE ENGINEERING
-              </div>
-              <div className="text-lg  text-white">
-                Backend Java developer at Teletic.
-              </div>
-              <h2 className=" text-white">2023 Nov - Present</h2>
-            </div>
-          </div>
+    <section id="experience" className="p-10  h-auto dark:bg-background-primary bg-background-secondary dark:text-white text-black ">
 
-          <div
-            className="flex flex-col rounded-2xl w-96 bg-[#ffffff] shadow-xl mb-3"
-            style={{ position: "relative" }}
-          >
-            <span className="absolute dark:bg-white top-[70px] left-[-23px] w-[15px] h-[15px] rounded-full bg-[#0F172A] border-2 border-[#1e293b]" />
-            <div className="flex  flex-col p-8 bg-[#1e293b] rounded-lg   ">
-              <div className="text-2xl font-bold text-white pb-6">
-                FREELANCER
-              </div>
-              <div className="text-lg text-white">Java FX/Swing developer.</div>
-              <h2 className="text-white">2021 - 2024</h2>
-            </div>
-          </div>
-          <div
-            className="flex flex-col rounded-2xl w-96 bg-[#ffffff] shadow-xl mb-3"
-            style={{ position: "relative" }}
-          >
-            <span className="absolute dark:bg-white top-[70px] left-[-23px] w-[15px] h-[15px] rounded-full bg-[#0F172A] border-2 border-[#1e293b]" />
-            <div className="flex  flex-col p-8 bg-[#1e293b] rounded-lg   ">
-              <div className="text-2xl font-bold text-white pb-6">
-                Generator
-              </div>
-              <div className="text-lg text-white">
-                Leverage a graphical editor to create beautiful web components.
-              </div>
-            </div>
-          </div>
-          <div
-            className="flex flex-col rounded-2xl w-96 bg-[#ffffff] shadow-xl mb-3"
-            style={{ position: "relative" }}
-          >
-            <span className="absolute dark:bg-white top-[70px] left-[-23px] w-[15px] h-[15px] rounded-full bg-[#0F172A] border-2 border-[#1e293b]" />
-            <div className="flex  flex-col p-8 bg-[#1e293b] rounded-lg   ">
-              <div className="text-2xl font-bold text-white pb-6">
-                Generator
-              </div>
-              <div className="text-lg text-white">
-                Leverage a graphical editor to create beautiful web components.
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+      <ol class="relative border-s border-gray-400 dark:border-gray-700">
+        <li class="mb-10 ms-6">
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-background-secondary dark:ring-background-primary dark:ring-gray-900 dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+          <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Application UI v2.0.0 <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span></h3>
+          <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 13th, 2022</time>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+          <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+            <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+          </svg> Download ZIP</a>
+        </li>
+        <li class="mb-10 ms-6">
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-background-secondary dark:ring-background-primary dark:ring-gray-900 dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+          <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Figma v1.3.0</h3>
+          <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 7th, 2021</time>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+        </li>
+        <li class="ms-6">
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-background-secondary dark:ring-background-primary dark:ring-gray-900 dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+          <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.2</h3>
+          <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2nd, 2021</time>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+        </li>
+      </ol>
+
+
     </section>
   );
 };
